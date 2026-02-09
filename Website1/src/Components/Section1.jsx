@@ -1,6 +1,6 @@
 // import React from 'react';
 import Nav from './Nav';
-import Content from './content';
+import Content from './Content';
 let Section =()=>{
     return(
    <div id="section1">
