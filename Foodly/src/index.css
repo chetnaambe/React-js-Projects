@@ -1,0 +1,122 @@
+@import "tailwindcss";
+:root{
+  --s:10px;
+  --xs:15px;
+  --size:20px;
+  --size1:25px;
+    --size2:35px;
+}
+body{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.multicolor-gradient{
+  /* background: linear-gradient(to right, #D7E4BE,#BBC5B4,rgb(240, 235, 235),#BBC5B4); */
+    background: linear-gradient(to right, #d7e4be6c,#bbc5b469,rgba(240, 235, 235, 0.422),#bbc5b455);
+}
+.nav-items{
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 3px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.nav-items::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color:#ea7659 ;
+  transition: width 0.3s ease;
+}
+.nav-items:hover::after{
+  width: 100%;
+}
+.icon{
+  font-size: var(--xs);
+}
+.bg-image{
+  position: relative;
+}
+.bg-image .one{
+object-fit: cover;
+ height: 380px;
+ width: 380px;
+ box-shadow: 5px 5px 40px black;
+border-radius: 50%;
+}
+.bg-image .two{
+  width: 150px;
+  height: 150px;
+position: absolute;
+right: 0%;
+top:67%;
+left: 58%;
+}
+.bg-image .three{
+  width: 150px;
+  height: 150px;
+position: absolute;
+top: 55%;
+right: 0%;
+left: 80%;
+
+}
+#fade-right {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeRight 2s forwards;
+}
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeLeft 2s forwards;
+}
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.shadow{
+  box-shadow: 5px 5px 40px rgba(9, 8, 8, 0.31);
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+.cards:hover .card {
+  transform: scale(0.9);
+  opacity: 0.58;
+}
+
+/* hovered card → highlight */
+.card:hover {
+  transform: scale(1.2) !important;
+  opacity: 1 !important;
+  z-index: 10;
+}
+
+.color:hover{
+color: #f0532b;
+}
+
+
+
+.full {
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+.full:hover {
+  transform: rotateY(360deg) scale(1.05); /* hover par rotate + zoom */
+}
+
+
