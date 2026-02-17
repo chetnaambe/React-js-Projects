@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "clear",
   "private": true,
   "version": "0.0.0",
@@ -23,5 +24,10 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "vite": "^7.2.4"
+=======
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+>>>>>>> af0eb100e9009edb6d4ec39508d29264925a4128
   }
 }
